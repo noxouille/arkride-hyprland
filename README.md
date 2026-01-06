@@ -14,7 +14,7 @@ A dark theme for Hyprland inspired by **Kuro no Kiseki / Trails through Daybreak
 | **Aaron Wei** | `#D94848` | Errors |
 | **Risette Twinings** | `#A4D8EC` | Types, info |
 | **Quatre Salision** | `#7F7B78` | Properties |
-| **Judith Ranster** | `#E07840` | Decorators |
+| **Judith Lanster** | `#E07840` | Decorators |
 | **Bergard Zeman** | `#A86078` | Deprecated |
 | **Elaine Auclair** | `#52B5A4` | Strings, success |
 
