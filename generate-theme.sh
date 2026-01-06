@@ -342,6 +342,8 @@ success "Colors replaced"
 info "Replacing theme names..."
 
 # Replace in files
+# IMPORTANT: Order matters! Replace case-sensitive patterns first (Arkride, ARKRIDE),
+# then the lowercase version last to catch remaining instances.
 find "$OUTPUT_DIR" -type f \( \
     -name "*.sh" -o \
     -name "*.lua" -o \
@@ -350,11 +352,14 @@ find "$OUTPUT_DIR" -type f \( \
     -name "*.theme" -o \
     -name "*.scss" -o \
     -name "*.css" -o \
-    -name "*.conf" \
+    -name "*.conf" -o \
+    -name "*.py" -o \
+    -name "*.ini" -o \
+    -name "*.rasi" \
 \) -exec sed -i \
-    -e "s/arkride/${THEME_NAME_LOWER}/gi" \
-    -e "s/Arkride/${THEME_NAME_CAPITALIZED}/g" \
     -e "s/ARKRIDE/${THEME_NAME_LOWER^^}/g" \
+    -e "s/Arkride/${THEME_NAME_CAPITALIZED}/g" \
+    -e "s/arkride/${THEME_NAME_LOWER}/g" \
     {} \;
 
 # Rename directories and files
