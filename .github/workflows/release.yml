@@ -1,0 +1,24 @@
+name: Release Archive
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Create archive
+        run: |
+          tar -cJf arkride-hyprland-${{ github.ref_name }}.tar.xz \
+            --exclude='.git' \
+            --exclude='.github' \
+            -C .. $(basename $PWD)
+
+      - name: Upload release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: arkride-hyprland-${{ github.ref_name }}.tar.xz
