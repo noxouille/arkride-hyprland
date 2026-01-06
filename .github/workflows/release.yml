@@ -16,7 +16,8 @@ jobs:
           tar -cJf arkride-hyprland-${{ github.ref_name }}.tar.xz \
             --exclude='.git' \
             --exclude='.github' \
-            -C .. $(basename $PWD)
+            --exclude='*.tar.xz' \
+            -C .. $(basename $PWD) || [[ $? -eq 1 ]]
 
       - name: Upload release
         uses: softprops/action-gh-release@v2
