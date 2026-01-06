@@ -1,0 +1,105 @@
+/* ============================================================================
+ * Arkride - GTK4 Config Override
+ * ============================================================================
+ * Place in ~/.config/gtk-4.0/gtk.css for libadwaita apps
+ * ============================================================================ */
+
+@define-color accent_color #5080C0;
+@define-color accent_bg_color #5080C0;
+@define-color accent_fg_color #e8ecf0;
+
+@define-color destructive_color #D94848;
+@define-color destructive_bg_color #D94848;
+@define-color destructive_fg_color #e8ecf0;
+
+@define-color success_color #52B5A4;
+@define-color success_bg_color #52B5A4;
+@define-color success_fg_color #e8ecf0;
+
+@define-color warning_color #F8BA65;
+@define-color warning_bg_color #F8BA65;
+@define-color warning_fg_color #0f1317;
+
+@define-color error_color #D94848;
+@define-color error_bg_color #D94848;
+@define-color error_fg_color #e8ecf0;
+
+@define-color window_bg_color #1a2028;
+@define-color window_fg_color #b8c2cc;
+
+@define-color view_bg_color #151a20;
+@define-color view_fg_color #b8c2cc;
+
+@define-color headerbar_bg_color #1a2028;
+@define-color headerbar_fg_color #b8c2cc;
+@define-color headerbar_border_color #3d4a5c;
+@define-color headerbar_backdrop_color #151a20;
+@define-color headerbar_shade_color rgba(0, 0, 0, 0.36);
+
+@define-color sidebar_bg_color #151a20;
+@define-color sidebar_fg_color #b8c2cc;
+@define-color sidebar_backdrop_color #0f1317;
+@define-color sidebar_shade_color rgba(0, 0, 0, 0.25);
+
+@define-color card_bg_color #232a34;
+@define-color card_fg_color #b8c2cc;
+@define-color card_shade_color rgba(0, 0, 0, 0.36);
+
+@define-color dialog_bg_color #232a34;
+@define-color dialog_fg_color #b8c2cc;
+
+@define-color popover_bg_color #232a34;
+@define-color popover_fg_color #b8c2cc;
+@define-color popover_shade_color rgba(0, 0, 0, 0.25);
+
+@define-color shade_color rgba(0, 0, 0, 0.36);
+@define-color scrollbar_outline_color rgba(0, 0, 0, 0.5);
+
+/* Window Controls - macOS style */
+windowcontrols > button:not(.suggested-action):not(.destructive-action) {
+    min-height: 12px;
+    min-width: 12px;
+    padding: 0;
+    margin: 0 4px;
+}
+
+windowcontrols > button.minimize:not(.suggested-action):not(.destructive-action),
+windowcontrols > button.maximize:not(.suggested-action):not(.destructive-action),
+windowcontrols > button.close:not(.suggested-action):not(.destructive-action) {
+    color: transparent;
+    background: none;
+}
+
+windowcontrols > button:not(.suggested-action):not(.destructive-action) > image {
+    min-width: 12px;
+    min-height: 12px;
+    border-radius: 9999px;
+}
+
+windowcontrols > button.close:not(.suggested-action):not(.destructive-action) > image {
+    background-color: #ed6a5e;
+}
+
+windowcontrols > button.close:hover:not(.suggested-action):not(.destructive-action) > image {
+    background-color: #f2847b;
+}
+
+windowcontrols > button.minimize:not(.suggested-action):not(.destructive-action) > image {
+    background-color: #f5bf4f;
+}
+
+windowcontrols > button.minimize:hover:not(.suggested-action):not(.destructive-action) > image {
+    background-color: #f7cb6e;
+}
+
+windowcontrols > button.maximize:not(.suggested-action):not(.destructive-action) > image {
+    background-color: #62c554;
+}
+
+windowcontrols > button.maximize:hover:not(.suggested-action):not(.destructive-action) > image {
+    background-color: #7ed372;
+}
+
+windowcontrols > button:backdrop:not(.suggested-action):not(.destructive-action) > image {
+    background-color: #3d4a5c;
+}

@@ -1,0 +1,103 @@
+// ============================================================================
+// Arkride Hyprland Theme - Master Color Palette
+// ============================================================================
+// Inspired by Kuro no Kiseki / Trails through Daybreak
+// Colors based on Arkride Solutions employees
+// ============================================================================
+
+// Character Colors (Final)
+// ---------------------------
+// Van:            #5080C0 - Navy blue (Primary)
+// Agnès:          #EA7475 - Coral rose (Keywords)
+// Feri:           #F8BA65 - Warm gold (Constants)
+// Aaron:          #D94848 - True red (Errors)
+// Risette:        #A4D8EC - Sky blue (Types)
+// Quatre:         #7F7B78 - Warm gray (Properties)
+// Judith:         #E07840 - Burnt orange (Decorators)
+// Bergard:        #A86078 - Burgundy (Deprecated)
+// Elaine:         #52B5A4 - Teal green (Strings/Success)
+
+// ============================================================================
+// Base Palette
+// ============================================================================
+
+// Backgrounds
+$bg0: #0f1317;      // Darkest - panels, floating
+$bg1: #151a20;      // Darker - sidebars, inactive
+$bg2: #1a2028;      // Main background
+$bg3: #232a34;      // Elevated surfaces
+$bg4: #2c3542;      // UI elements
+$bg5: #3d4a5c;      // Borders, separators
+
+// Foregrounds
+$fg0: #e8ecf0;      // Brightest - headings
+$fg1: #cdd4dc;      // Primary text
+$fg2: #b8c2cc;      // Main text
+$fg3: #8a96a4;      // Subtle text
+$fg4: #6b7888;      // Muted - comments
+$fg5: #505c6c;      // Very muted
+
+// ============================================================================
+// Character Colors
+// ============================================================================
+
+$van: #5080C0;
+$van-bright: #70A0D8;
+
+$agnes: #EA7475;
+$agnes-bright: #f09090;
+
+$feri: #F8BA65;
+$feri-bright: #ffc97a;
+
+$aaron: #D94848;
+$aaron-bright: #E86060;
+
+$risette: #A4D8EC;
+$risette-bright: #bce8f8;
+
+$quatre: #7F7B78;
+$quatre-bright: #9a9694;
+
+$judith: #E07840;
+$judith-bright: #F09058;
+
+$bergard: #A86078;
+$bergard-bright: #C07890;
+
+$elaine: #52B5A4;
+$elaine-bright: #6ECFBE;
+
+// ============================================================================
+// Semantic Mapping
+// ============================================================================
+
+$primary: $van;
+$secondary: $agnes;
+$accent: $van;
+$warning: $feri;
+$error: $aaron;
+$success: $elaine;
+$info: $risette;
+
+// ============================================================================
+// Terminal 16-Color Mapping
+// ============================================================================
+
+$term-black: $bg0;           // #0f1317
+$term-red: $aaron;           // #D94848
+$term-green: $elaine;        // #52B5A4
+$term-yellow: $feri;         // #F8BA65
+$term-blue: $van;            // #5080C0
+$term-magenta: $agnes;       // #EA7475
+$term-cyan: $risette;        // #A4D8EC
+$term-white: $fg2;           // #b8c2cc
+
+$term-bright-black: $bg5;            // #3d4a5c
+$term-bright-red: $aaron-bright;     // #E86060
+$term-bright-green: $elaine-bright;  // #6ECFBE
+$term-bright-yellow: $feri-bright;   // #ffc97a
+$term-bright-blue: $van-bright;      // #70A0D8
+$term-bright-magenta: $agnes-bright; // #f09090
+$term-bright-cyan: $risette-bright;  // #bce8f8
+$term-bright-white: $fg0;            // #e8ecf0

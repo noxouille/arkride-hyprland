@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Arkride
+Comment=Dark theme inspired by Kuro no Kiseki / Trails through Daybreak
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Arkride
+MetacityTheme=Arkride
+IconTheme=Adwaita
+CursorTheme=default
+ButtonLayout=close,minimize,maximize:appmenu
