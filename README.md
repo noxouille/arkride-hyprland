@@ -31,18 +31,24 @@ arkride-hyprland/
 │   ├── _colors.scss
 │   └── palette.md
 │
-├── config/                   # → ~/.config/
+├── config/                   # → ~/.config/colorschemes/arkride/
 │   ├── colors.css
 │   ├── foot.ini
 │   ├── gtk-4.0/gtk.css
 │   ├── hyprland.conf
 │   ├── kitty.conf
+│   ├── nvim-theme
 │   ├── rofi.rasi
 │   ├── scripts/
 │   │   ├── showcase.sh
 │   │   ├── toggle-music.sh
 │   │   └── typing-demo.lua
-│   └── showcase.conf
+│   ├── showcase.conf
+│   ├── vscodium-theme
+│   ├── wallpaper-default      # Default wallpaper path (relative to ~/Pictures/Wallpapers/)
+│   ├── wallpaper.jpg          # Fallback/sample wallpaper
+│   ├── wallpapers             # List of compatible wallpapers for walset picker
+│   └── waybar-layout          # Default waybar layout for this theme
 │
 ├── extras/                   # Installed separately
 │   ├── nvim/arkride.nvim/
@@ -114,6 +120,21 @@ Add to your `style.css`:
 ```css
 @import "colors.css";
 ```
+
+The `waybar-layout` file specifies the default waybar layout when switching to this theme.
+
+### Wallpapers
+
+The theme includes wallpaper integration with the `walset` wallpaper picker:
+
+- **`wallpaper-default`** - Path to the default wallpaper (relative to `~/Pictures/Wallpapers/`). Applied automatically when switching to this theme via `apply-theme.sh`.
+
+- **`wallpapers`** - List of compatible wallpapers for the theme. When this file exists, the `walset` picker will only show wallpapers from this list. Supports:
+  - Individual files: `Trails/daybreak/cal-w2102-m.jpg`
+  - Glob patterns: `Trails/daybreak/*`
+  - Comments: Lines starting with `#`
+
+If `wallpapers` file doesn't exist, all wallpapers in `~/Pictures/Wallpapers/` are available.
 
 ### GTK Theme
 ```bash
