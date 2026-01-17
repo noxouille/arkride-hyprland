@@ -1,0 +1,70 @@
+/* Swaync Colors - Arkride Theme (Dark)
+ * Character-based color system from Kuro no Kiseki / Trails through Daybreak
+ */
+
+/* === BASE PALETTE === */
+@define-color background #1a2028;
+@define-color surface #1a2028;
+@define-color surface_bright #3d4a5c;
+@define-color surface_dim #0f1317;
+@define-color surface_container #232a34;
+@define-color surface_container_low #1e2630;
+@define-color surface_container_lowest #141a22;
+@define-color surface_container_high #2c3542;
+@define-color surface_container_highest #505c6c;
+@define-color surface_variant #232a34;
+@define-color surface_tint #5080C0;
+
+@define-color on_background #b8c2cc;
+@define-color on_surface #b8c2cc;
+@define-color on_surface_variant #8a96a4;
+@define-color outline #6b7888;
+@define-color outline_variant #3d4a5c;
+@define-color scrim rgba(0, 0, 0, 0.5);
+@define-color shadow rgba(0, 0, 0, 0.36);
+
+/* === CHARACTER COLORS === */
+@define-color van #5080C0;          /* Primary - Van Arkride (navy blue) */
+@define-color agnes #EA7475;        /* Keywords - Agnès Claudel (coral rose) */
+@define-color feri #F8BA65;         /* Constants - Feri Al-Fayed (warm gold) */
+@define-color aaron #D94848;        /* Errors - Aaron Wei (true red) */
+@define-color elaine #52B5A4;       /* Success - Elaine Auclair (teal green) */
+@define-color risette #A4D8EC;      /* Types/Info - Risette Twinings (sky blue) */
+@define-color quatre #7F7B78;       /* Properties - Quatre Salision (warm gray) */
+@define-color judith #E07840;       /* Decorators - Judith Ranster (burnt orange) */
+@define-color bergard #A86078;      /* Deprecated - Bergard Zeman (burgundy) */
+
+/* === SEMANTIC MAPPING === */
+@define-color primary @van;
+@define-color primary_container #3d5a8c;
+@define-color on_primary #e8ecf0;
+@define-color on_primary_container #e8ecf0;
+
+@define-color secondary @feri;
+@define-color secondary_container #c89a50;
+@define-color on_secondary #1a2028;
+@define-color on_secondary_container #1a2028;
+
+@define-color tertiary @agnes;
+@define-color tertiary_container #c85858;
+@define-color on_tertiary #1a2028;
+@define-color on_tertiary_container #e8ecf0;
+
+@define-color error @aaron;
+@define-color error_container #a63838;
+@define-color on_error #e8ecf0;
+@define-color on_error_container #e8ecf0;
+
+@define-color success @elaine;
+@define-color on_success #1a2028;
+@define-color success_container #3d8a7a;
+@define-color on_success_container #e8ecf0;
+
+@define-color warning @judith;
+@define-color on_warning #1a2028;
+@define-color info @risette;
+@define-color on_info #1a2028;
+
+@define-color inverse_surface #e8ecf0;
+@define-color inverse_on_surface #1a2028;
+@define-color inverse_primary #1E3A5F;
