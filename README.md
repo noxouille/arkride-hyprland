@@ -4,6 +4,8 @@
 
 A dark theme for Hyprland inspired by **Kuro no Kiseki / Trails through Daybreak**, with colors based on the Arkride Solutions employees.
 
+[![Preview](https://img.youtube.com/vi/tI818oIAUZA/maxresdefault.jpg)](https://youtu.be/tI818oIAUZA)
+
 ## Color Palette
 
 | Character | Hex | Usage |
