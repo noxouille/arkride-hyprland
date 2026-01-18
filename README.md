@@ -34,11 +34,14 @@ arkride-hyprland/
 │   └── palette.md
 │
 ├── config/                   # → ~/.config/colorschemes/arkride/
-│   ├── colors.css
+│   ├── colors.css              # Shared colors (Waybar, wlogout, SwayNC)
 │   ├── foot.ini
 │   ├── gtk-4.0/gtk.css
+│   ├── gtk-theme               # GTK theme name for gsettings
 │   ├── hyprland.conf
 │   ├── kitty.conf
+│   ├── logo.png                # Fastfetch logo
+│   ├── matugen-base.json       # Base colors for matugen/walset wallpaper picker
 │   ├── nvim-theme
 │   ├── rofi.rasi
 │   ├── scripts/
@@ -47,10 +50,10 @@ arkride-hyprland/
 │   │   └── typing-demo.lua
 │   ├── showcase.conf
 │   ├── vscodium-theme
-│   ├── wallpaper-default      # Default wallpaper path (relative to ~/Pictures/Wallpapers/)
-│   ├── wallpaper.jpg          # Fallback/sample wallpaper
-│   ├── wallpapers             # List of compatible wallpapers for walset picker
-│   └── waybar-layout          # Default waybar layout for this theme
+│   ├── wallpaper-default       # Default wallpaper path (relative to ~/Pictures/Wallpapers/)
+│   ├── wallpaper.jpg           # Fallback/sample wallpaper
+│   ├── wallpapers              # List of compatible wallpapers for walset picker
+│   └── waybar-layout           # Default waybar layout for this theme
 │
 ├── extras/                   # Installed separately
 │   ├── nvim/arkride.nvim/
@@ -135,6 +138,8 @@ The theme includes wallpaper integration with the `walset` wallpaper picker:
   - Individual files: `Trails/daybreak/cal-w2102-m.jpg`
   - Glob patterns: `Trails/daybreak/*`
   - Comments: Lines starting with `#`
+
+- **`matugen-base.json`** - Base colors for [matugen](https://github.com/InioX/matugen). Required for `walset` to work properly. Defines custom color variables (bg, fg, color0-15) that matugen templates use alongside wallpaper-extracted accent colors.
 
 If `wallpapers` file doesn't exist, all wallpapers in `~/Pictures/Wallpapers/` are available.
 
