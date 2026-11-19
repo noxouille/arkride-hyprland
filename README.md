@@ -53,7 +53,7 @@ arkride-hyprland/
 │   ├── wallpaper-default       # Default wallpaper path (relative to ~/Pictures/Wallpapers/)
 │   ├── wallpaper.jpg           # Fallback/sample wallpaper
 │   ├── wallpapers              # List of compatible wallpapers for the Wallpaper Launcher (Alt+W)
-│   └── waybar-layout           # Default waybar layout for this theme
+│   └── waybar-layout           # Default Bar Layout for this theme (quartz-qs)
 │
 ├── extras/                   # Installed separately
 │   ├── nvim/arkride.nvim/
@@ -126,7 +126,7 @@ Add to your `style.css`:
 @import "colors.css";
 ```
 
-The `waybar-layout` file specifies the default waybar layout when switching to this theme.
+The `waybar-layout` file names the Bar Layout to switch to with this theme: `quartz-qs`, the Quickshell bar. It can name a Waybar layout too.
 
 ### Wallpapers
 
